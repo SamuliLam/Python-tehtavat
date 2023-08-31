@@ -8,11 +8,13 @@ while userInput != "":
 
 
 def list_even(array):
-    sum = 0
-    for evennumber in range(array, 2):
+    print(array)
+    print("\n")
 
-
-        return print(evennumber)
+    for oddNumber in array:
+        if oddNumber % 2 != 0:
+            array.remove(oddNumber)
+    return print(array)
 
 
 list_even(numbers)
