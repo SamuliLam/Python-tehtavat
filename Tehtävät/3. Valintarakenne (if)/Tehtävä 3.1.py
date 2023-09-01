@@ -1,4 +1,4 @@
-kuhanpituus = int(input("Anna kuhan pituus senttimetreinä: "))
+kuhanpituus = float(input("Anna kuhan pituus senttimetreinä: "))
 
 if kuhanpituus < 37:
     print("Kuha on "+str(37-kuhanpituus)+" cm liian lyhyt. Laske kuha takaisin järveen.")

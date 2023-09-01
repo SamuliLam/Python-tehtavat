@@ -12,7 +12,7 @@ massa = float(luoditg+naulatg+leiviskätg)
 massag = massa % 1000
 massakg = int (massa / 1000)
 
-print(f"Massa nykymittojen mukaan: \n {massakg} kilogrammaa ja  {massag:.2f} grammaa.")
+print(f"Massa nykymittojen mukaan: \n{massakg} kilogrammaa ja {massag:.2f} grammaa.")
 
 
 
