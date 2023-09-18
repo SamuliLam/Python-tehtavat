@@ -1,13 +1,13 @@
-
 lentoasemat = {}
 
-while True:
-    choice = input(
-        "1. Syötä uusi lentoasema \n"
-        "2. Hae lentoaseman tiedot \n"
-        "3. Lopeta ohjelma \n"
-        "Kirjoita haluamaasi syötettä vastaava numero: \n"
-    )
+choice = input(
+    "1. Syötä uusi lentoasema \n"
+    "2. Hae lentoaseman tiedot \n"
+    "3. Lopeta ohjelma \n"
+    "Kirjoita haluamaasi syötettä vastaava numero: \n"
+)
+
+while choice != "3":
 
     if choice == "1":
         lentoasema_nimi = input("Anna lentoaseman nimi: ")
@@ -18,5 +18,13 @@ while True:
         search_icao = input("Anna sen lentoaseman ICAO-koodi, jonka tiedot haluat: \n")
         if search_icao in lentoasemat:
             print("Lentoaseman nimi: " + lentoasemat[search_icao])
-    elif choice == "3":
-        break
+
+    choice = input(
+        "1. Syötä uusi lentoasema \n"
+        "2. Hae lentoaseman tiedot \n"
+        "3. Lopeta ohjelma \n"
+        "Kirjoita haluamaasi syötettä vastaava numero: \n"
+    )
+
+
+
