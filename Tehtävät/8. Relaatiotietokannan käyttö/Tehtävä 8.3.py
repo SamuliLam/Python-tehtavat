@@ -39,7 +39,7 @@ def calculate_distance(country_code, country_code2):
 distance = calculate_distance(icao1, icao2)
 
 if distance is not None:
-    print(f"Etäisyys lentokenttien {icao1} ja {icao2} välillä on {distance} kilometriä.")
+    print(f"Etäisyys lentokenttien {icao1} ja {icao2} välillä on {distance:.0f} kilometriä.")
 else:
     print("Lentokenttien tietoja ei löytynyt.")
 
