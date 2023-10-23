@@ -27,19 +27,19 @@ class Kilpailu:
 
     def tunti_kuluu(self):
         for auto in self.autolista:
-            auto.kiihdytä(random.randint(-15,15))
+            auto.kiihdytä(random.randint(-15, 15))
             auto.kulje(1)
 
     def tulosta_tilanne(self):
         for auto in self.autolista:
             print(f'Auto {auto.rekisteritunnus} on kulkenut {auto.kuljettumatka}')
 
+#auto ei saa kulkea yli 8000km
     def kilpailu_ohi(self):
         for auto in self.autolista:
             if auto.kuljettumatka >= self.pituus_km:
-                return True
-            else:
                 return False
+        return True
 
 #Pääohjelma
 
@@ -55,6 +55,8 @@ for i in range(10):
 #Tehdään kilpailuolio nimeltä Suuri romiralli
 kilpailu = Kilpailu("Suuri romuralli", 8000, autot)
 
-while not Kilpailu.kilpailu_ohi():
-    Kilpailu.tunti_kuluu()
-    Kilpailu.tulosta_tilanne()
+#Kilpailu käyntiin
+while kilpailu.kilpailu_ohi():
+    kilpailu.tunti_kuluu()
+
+kilpailu.tulosta_tilanne()
