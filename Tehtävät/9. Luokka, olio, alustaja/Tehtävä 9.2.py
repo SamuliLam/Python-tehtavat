@@ -14,6 +14,7 @@ class Auto:
             self.nopeus = self.nopeus + nopeudenmuutos
 
 
+
 a1 = Auto("ABC-123", 142)
 
 a1.kiihdytä(30)
