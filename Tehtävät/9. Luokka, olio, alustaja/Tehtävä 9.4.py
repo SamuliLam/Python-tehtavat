@@ -10,7 +10,7 @@ class Auto:
 
     def kiihdytä(self, nopeudenmuutos):
         if (self.nopeus + nopeudenmuutos > self.huippunopeus):
-            self.nopeus = 142
+            self.nopeus = self.huippunopeus
         elif self.nopeus + nopeudenmuutos < 0:
             self.nopeus = 0
         else:
